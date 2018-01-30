@@ -17,7 +17,7 @@ USER root
 # Init dependencies for the setup process
 RUN dpkg --add-architecture i386
 RUN apt-get update && \
-	apt-get install software-properties-common python-software-properties unzip -y
+	apt-get install software-properties-common unzip -y
 
 # Install Android SDK
 ADD $ANDROID_SDK_ZIP_URL /opt/
