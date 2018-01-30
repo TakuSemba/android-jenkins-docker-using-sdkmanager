@@ -26,8 +26,8 @@ RUN unzip -q /opt/$ANDROID_SDK_ZIP -d $ANDROID_HOME && \
 
 # Install required build-tools
 RUN	echo y | sdkmanager platform-tools \  
-	"build-tools;25.0.0" \ 
-	"platforms;android-25" \
+	"build-tools;26.0.2" \ 
+	"platforms;android-26" \
 	"extras;android;m2repository" \
 	"extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2" \
 	"extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"  && \
