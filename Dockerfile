@@ -18,6 +18,10 @@ USER root
 RUN dpkg --add-architecture i386
 RUN apt-get update && \
 	apt-get install software-properties-common unzip -y
+	
+RUN wget https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz
+RUN tar xvzf hub-linux-amd64-2.2.9.tgz
+RUN mv hub-linux-amd64-2.2.9/bin/hub /usr/bin/hub
 
 # Install Android SDK
 ADD $ANDROID_SDK_ZIP_URL /opt/
