@@ -19,7 +19,7 @@ RUN dpkg --add-architecture i386
 RUN apt-get update && \
 	apt-get install software-properties-common unzip -y
 	
-RUN apt-get install -y rubygems && gem install hub
+RUN apt-get install -y rubygems && gem install hub --devel
 
 # Install Android SDK
 ADD $ANDROID_SDK_ZIP_URL /opt/
