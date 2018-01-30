@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins/jenkins
 
 # Set desired Android Linux SDK version
 ENV ANDROID_SDK_ZIP sdk-tools-linux-3859397.zip
